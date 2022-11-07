@@ -93,18 +93,12 @@ namespace single_linked_list
                 Console.WriteLine();
             }
         }
-        public bool ListEmpty()
-        {
-            if (START == null)
-                return true;
-
-        }
     }
     class program
     {
         static void Main(string[] args)
         {
-
+            
         }
     }
 }
