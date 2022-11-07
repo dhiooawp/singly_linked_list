@@ -51,11 +51,16 @@ namespace single_linked_list
                     Console.WriteLine();
                     return;
                 }
+                previous.next = current;
+                previous.next = newnode;
             }
-            previous.next = current;
+            newnode.next = current;
             previous.next = newnode;
         }
+        public bool delnode(int)
+        {
 
+        }
     }
     class program
     {
