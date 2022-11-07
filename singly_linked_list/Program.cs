@@ -83,12 +83,20 @@ namespace single_linked_list
         public void Traverse()
         {
             if(ListEmpty())
-                Console.WriteLine();
+                Console.WriteLine("\nThe records in the list are: ");
             else
             {
-                Console.WriteLine();
+                Console.WriteLine("\n The records in the list are: ");
                 Node currentNode;
+                for(currentNode = START; currentNode != null; currentNode = currentNode.next)
+                    Console.Write(currentNode.rollNumber + " " + currentNode.name + "\n");
+                Console.WriteLine();
             }
+        }
+        public bool ListEmpty()
+        {
+            if (START == null)
+                return true;
 
         }
     }
@@ -96,8 +104,7 @@ namespace single_linked_list
     {
         static void Main(string[] args)
         {
-            Console.WriteLine();
-            Node
+
         }
     }
 }
