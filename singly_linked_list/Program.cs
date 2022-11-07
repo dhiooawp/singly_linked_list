@@ -168,6 +168,14 @@ namespace single_linked_list
                                     Console.WriteLine("\nName: " + current.name);
                                 }
                             }
+                            break;
+                        case '5':
+                            return;
+                        default:
+                            {
+                                Console.WriteLine("\nInvalid Option");
+                                break;
+                            }
                     }
                 }
             }
