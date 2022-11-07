@@ -12,7 +12,7 @@ namespace single_linked_list
     }
     class list
     {
-     
+   
     }
     class program
     {
