@@ -68,6 +68,14 @@ namespace single_linked_list
                     START = START.next;
                 return true;
         }
+        public bool Search(int rollNo, ref Node previous, ref Node current)
+        {
+            while ((current != null) && (rollNo != current.rollNumber))
+            {
+                previous = current;
+                current = current.next;
+            }
+        }
     }
     class program
     {
