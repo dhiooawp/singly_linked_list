@@ -108,17 +108,49 @@ namespace single_linked_list
             list obj = new list();
             while (true)
             {
-                Console.WriteLine("\nMENU");
-                Console.WriteLine("1. ADD A RECORD TO THE LIST");
-                Console.WriteLine("2. DELETE A RECORD FROM THE LIST");
-                Console.WriteLine("3. VIEW ALL THE RECORDS IN THE LIST");
-                Console.WriteLine("4. SEARCH DOR A RECORD IN THE LIST");
-                Console.WriteLine("5. EXIT");
-                Console.WriteLine("\nEnter your choice (1-5) :");
-                char ch = Convert.ToChar(Console.ReadLine());
+                try
+                {
+                    Console.WriteLine("\nMENU");
+                    Console.WriteLine("1. ADD A RECORD TO THE LIST");
+                    Console.WriteLine("2. DELETE A RECORD FROM THE LIST");
+                    Console.WriteLine("3. VIEW ALL THE RECORDS IN THE LIST");
+                    Console.WriteLine("4. SEARCH DOR A RECORD IN THE LIST");
+                    Console.WriteLine("5. EXIT");
+                    Console.WriteLine("\nEnter your choice (1-5) :");
+                    char ch = Convert.ToChar(Console.ReadLine());
+                    switch (ch)
+                    {
+                        case '1':
+                            {
+                                obj.addNote();
+                            }
+                            break;
+
+                        case '2':
+                            {
+                                if (obj.ListEmpty())
+                                {
+                                    Console.WriteLine("\nList is empty");
+                                    break;
+                                }
+                                Console.WriteLine("Enter the roll number of" + "the student whose record is to be deleted: ");
+                                int rollNo = Convert.ToInt32(Console.ReadLine());
+                                Console.WriteLine();
+                                if (obj.delnode(rollNo) == false)
+                                    Console.WriteLine("\n Record not found.");
+                                else
+                                    Console.WriteLine("Record with roll number" + rollNo + " Deleted");
+                            }
+                            break;
+                        case '3':
+                            {
+                                obj.Traverse
+
+                            }
+                    }
+                }
+
             }
-
-
         }
     }
 }
