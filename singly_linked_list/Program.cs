@@ -75,13 +75,29 @@ namespace single_linked_list
                 previous = current;
                 current = current.next;
             }
+            if (current == null)
+                return false;
+            else
+                return true;
+        }
+        public void Traverse()
+        {
+            if(ListEmpty())
+                Console.WriteLine();
+            else
+            {
+                Console.WriteLine();
+                Node currentNode;
+            }
+
         }
     }
     class program
     {
         static void Main(string[] args)
         {
-
+            Console.WriteLine();
+            Node
         }
     }
 }
